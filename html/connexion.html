@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ANL : Connexion</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/connexion.css">
+        <link rel="shortcut icon" href="../img/logoanl.jpg">
+    </head>
+
+    <body>
+
+        <div class ="nav">
+
+            <div>
+
+                    <a id="openMenu"><img id= "barres" src = "../img/3barre.png"></a>
+            </div>
+
+            <div>
+                    <img src="../img/logoanl.jpg" alt="logo">
+            </div>
+
+            <div>
+                <button onclick="location.href='connexion.html';" class="botonconnexion" role="button">Se connecter</button>
+
+                <button onclick="location.href='inscription.html';" class="boutoninscire" role="button">S'inscrire</button>
+            </div>
+
+        </div>
+
+        <div id ="sidemenu" class="menu">
+
+            <a href="../index.html"><h2>Acceuil</h2></a>
+
+            <a href="actualite.html"><h2>Actualités</h2></a>
+
+            <a href="communaute.html"><h2>Communauté</h2></a>
+
+            <a href="stage.html"><h2>STAGE</h2></a>
+            
+            <a href="video.html"><h2>Vidéos/Liens</h2></a>
+
+            <a href="compte.html"><h2>Mon Compte</h2></a>
+
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+
+        <div class="coContainer">
+
+            <div class = "containleft">
+
+                <form>
+
+                    <h1>Se connecter</h1>
+
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" placeholder="Email" name="email" required><br>
+
+                    <label for="psw"><b>Mot de passe</b></label><br>
+                    <input type="password" placeholder="Mot de passe" name="psw" required><br>
+
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn">Valider</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            <div class ="containright">
+                <h1>Content de vous revoir !</h1>
+
+                <p>
+                    Connectez vous pour acceder a votre espace personnaliser !
+                </p>
+
+                <p> 
+                    Vous n'avez pas de compte ?
+                </p>
+
+                <p>
+                    Créer en un dès maintenant !
+                </p>
+
+                <button onclick="location.href='inscription.html';" class="boutoninscire2" role="button">Créer un compte</button>
+
+            </div>
+
+
+        </div>
+
+
+        <script type="text/javascript" src="../js/menu.js"></script>
+
+    </body>
+</html>

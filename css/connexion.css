@@ -1,0 +1,348 @@
+@font-face {
+	font-family: NewRamen; 
+	src: url('../font/NewRamen.ttf');
+}
+
+@font-face {
+	font-family: SuperSquad; 
+	src: url('../font/Super Squad.ttf');
+}
+
+@font-face {
+	font-family: SpicySushi; 
+	src: url('../font/Spicy Sushi.ttf');
+}
+
+@font-face {
+	font-family: anl; 
+	src: url('../font/anl.ttf');
+}
+
+*{
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: black;
+}
+
+/*
+------------------------
+		NAV
+------------------------
+
+*/
+
+.nav{
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	padding: 4px;
+	border-bottom: solid gray 1px;
+
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav img[alt="logo"]{
+}
+
+.nav h1{
+
+	margin-left: 20px;
+	text-align: center;
+	padding: 5px;
+	color : white;
+	font-family: Consolas;
+	font-size: 35px;
+	letter-spacing: 2px;
+
+}
+
+.botonconnexion {
+	margin-top: 20px;
+	margin-right: 10px;
+
+	padding: 10px;
+
+	color: white;
+	font-family: consolas;
+	font-size: 20px;
+	font-weight: bold;
+
+	background-color: black;
+
+	border: solid white 3px;
+	border-radius: 10px;
+
+	transition: 1s;
+}
+
+.botonconnexion:hover {
+
+	cursor: pointer;
+
+	background-color: white;
+	border: solid black 3px;
+	color: black;
+
+	transition: 1s;
+}
+
+.boutoninscire {
+	margin-top: 20px;
+	margin-right: 30px;
+
+	padding: 10px;
+
+	color: black;
+	font-family: consolas;
+	font-size: 20px;
+	font-weight: bold;
+
+	background-color: yellow;
+
+	border: solid black 3px;
+	border-radius: 10px;
+
+	transition: 1s;
+}
+
+.boutoninscire:hover {
+
+	cursor: pointer;
+
+	background-color: black;
+	border: solid yellow 3px;
+	color: white;
+
+	transition: 1s;
+}
+
+.nav img[id="barres"]{
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 250px;
+	filter : invert(100%);
+	width: 55px;
+	cursor : pointer;
+}
+
+/*
+------------------------
+		MENU
+------------------------
+
+*/
+
+.menu {
+	z-index: 1;
+	margin-top: 98px;
+	height: 100%;
+	width: 300px;
+	position: fixed;
+	background-color: black;
+	left : -300px;
+	transition: 0.5s;
+}
+
+.menu h2{
+	color: white;
+	padding: 20px;
+	font-family: sans-serif;
+	border-bottom: solid black 1px;
+	transition: 1s;
+}
+
+
+.menu h2:hover{
+	color: white;
+	padding: 20px;
+	font-family: sans-serif;
+	border-bottom: solid white 2px;
+	transition: 1s;
+}
+
+/*
+------------------------
+		connexion
+------------------------
+
+*/
+
+.connexion {
+	color : white;
+	width: 70%;
+	margin-left: 15%;
+}
+
+.connexion h1{
+
+	text-align: center;
+	letter-spacing: 5px;
+	font-family: anl;
+	font-size: 100px;
+	margin-bottom: 20px;
+
+}
+/*
+------------------------
+		inscription
+------------------------
+
+*/
+
+.coContainer {
+
+	margin : auto;
+
+	width: 70%;
+	height: 600px;
+	display: grid;
+	grid-template-columns: 50% 50%;
+
+	background-color: white;
+	border-radius: 20px;
+}
+
+.containright {
+	background-color: yellow;
+	border-bottom-right-radius:20px;
+	border-top-right-radius:20px;
+
+
+	color : black;
+	text-align: center;
+}
+
+.containright h1{
+	margin-top: 110px;
+	margin-bottom: 40px;
+	font-family: SpicySushi;
+	font-size: 50px;
+	letter-spacing: 2px;
+}
+
+.containright p{
+
+	margin: auto;
+	margin-bottom: 15px;
+	font-family: consolas;
+	font-weight: bold;
+	font-size: 25px;
+	width: 90%;
+}
+
+.boutoninscire2 {
+	margin-top: 30px;
+	margin-right: 10px;
+
+	padding: 10px;
+
+	color: white;
+	font-family: consolas;
+	font-size: 30px;
+	font-weight: bold;
+
+	background-color: black;
+
+	border: solid white 8px;
+	border-radius: 10px;
+
+	transition: 1s;
+}
+
+.boutoninscire2:hover {
+
+	cursor: pointer;
+
+	background-color: white;
+	border: solid black 8px;
+	color: black;
+
+	transition: 1s;
+}
+
+
+.containleft{
+	text-align: center;
+}
+
+.containleft h1{
+	margin-top: 60px;
+	margin-bottom: 25px;
+	font-family: Arial ;
+	font-size: 50px;
+}
+
+.containleft label{
+
+	font-family: consolas;
+	font-weight: bold;
+	font-size: 17px;
+	text-align: left;
+}
+
+.containleft p {
+	margin-top: 5px;
+	margin-bottom: 10px;
+	font-family: sans-serif;
+}
+
+.containleft input[type=text], input[type=password] {
+  width: 70%;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 15px;
+  margin-right: 5px;
+  margin: 5px 0 22px 0;
+  border-radius: 10px;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+.containleft input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+.containleft button {
+	margin-top: 20px;
+	margin-right: 10px;
+
+	padding: 10px;
+	padding-left: 25px;
+	padding-right: 25px;
+
+	color: black;
+	font-family: SpicySushi;
+	font-size: 25px;
+	font-weight: bold;
+
+	background-color: yellow;
+
+	border: solid black 5px;
+
+	border-radius: 10px;
+
+	transition: 1s;
+}
+
+.containleft button:hover {
+
+	cursor: pointer;
+
+	background-color: black;
+	border: solid yellow 5px;
+	color: yellow;
+
+	transition: 1s;
+}

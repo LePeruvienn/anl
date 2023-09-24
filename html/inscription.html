@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>ANL - Inscription</title>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/inscription.css">
+        <link rel="shortcut icon" href="../img/logoanl.jpg">
+    </head>
+
+    <body>
+
+        <div class ="nav">
+
+            <div>
+
+                    <a id="openMenu"><img id= "barres" src = "../img/3barre.png"></a>
+            </div>
+
+            <div>
+                    <img src="../img/logoanl.jpg" alt="logo">
+            </div>
+
+            <div>
+                <button onclick="location.href='connexion.html';" class="botonconnexion" role="button">Se connecter</button>
+
+                <button onclick="location.href='inscription.html';" class="boutoninscire" role="button">S'inscrire</button>
+            </div>
+
+        </div>
+
+        <div id ="sidemenu" class="menu">
+
+            <a href="../index.html"><h2>Acceuil</h2></a>
+
+            <a href="actualite.html"><h2>Actualités</h2></a>
+
+            <a href="communaute.html"><h2>Communauté</h2></a>
+
+            <a href="stage.html"><h2>STAGE</h2></a>
+            
+            <a href="video.html"><h2>Vidéos/Liens</h2></a>
+
+            <a href="compte.html"><h2>Mon Compte</h2></a>
+
+        </div>
+
+        <br><br><br><br><br><br><br><br>
+
+        <div class="isContainer">
+
+            <div class ="containleft">
+                <h1>Allez-y !</h1>
+
+                <p>
+                    Créer un compte pour pouvoir acceder à toutes les fonctionnalités du site !
+                </p>
+
+                <p> 
+                    Vous avez déja un compte?
+                </p>
+
+                <p>
+                    Connecter vous en cliquant sur le bouton ci-dessous !
+                </p>
+
+                <button onclick="location.href='connexion.html';" class="botonconnexion2" role="button">Se connecter</button>
+
+            </div>
+
+            <div class = "containright">
+
+                <form>
+
+                    <h1>S'inscrire</h1>
+
+                    <label for="email"><b>Email</b></label><br>
+                    <input type="text" placeholder="Email" name="email" required><br>
+
+                    <label for="psw"><b>Mot de passe</b></label><br>
+                    <input type="password" placeholder="Mot de passe" name="psw" required><br>
+
+                    <label for="psw-repeat"><b>Re-taper votre mot de passe</b></label><br>
+                    <input type="password" placeholder="Mot de passe" name="psw-repeat" required><br>
+
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Se souvenir de moi
+                    </label>
+
+                    <p>
+                        En créant votre compte accepter nos <a href="#" style="color:dodgerblue"> Conditions d'utilisations</a>.
+                    </p>
+
+                    <div class="clearfix">
+                        <button type="submit" class="signupbtn">Valider</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+        </div>
+
+        <script type="text/javascript" src="../js/menu.js"></script>
+
+    </body>
+</html>

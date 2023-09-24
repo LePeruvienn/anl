@@ -1,0 +1,326 @@
+@font-face {
+	font-family: NewRamen; 
+	src: url('../font/NewRamen.ttf');
+}
+
+@font-face {
+	font-family: SuperSquad; 
+	src: url('../font/Super Squad.ttf');
+}
+
+@font-face {
+	font-family: SpicySushi; 
+	src: url('../font/Spicy Sushi.ttf');
+}
+
+@font-face {
+	font-family: anl; 
+	src: url('../font/anl.ttf');
+}
+
+*{
+	margin: 0;
+}
+
+a{
+	text-decoration: none;
+}
+
+body{
+	background-color: black;
+}
+
+/*
+------------------------
+		NAV
+------------------------
+
+*/
+
+.nav{
+	z-index: 1;
+	position: fixed;
+	width: 100%;
+	background-color: black;
+	padding: 4px;
+	border-bottom: solid gray 1px;
+
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.nav img[alt="logo"]{
+}
+
+.nav h1{
+
+	margin-left: 20px;
+	text-align: center;
+	padding: 5px;
+	color : white;
+	font-family: Consolas;
+	font-size: 35px;
+	letter-spacing: 2px;
+
+}
+
+.botonconnexion {
+	margin-top: 20px;
+	margin-right: 10px;
+
+	padding: 10px;
+
+	color: white;
+	font-family: consolas;
+	font-size: 20px;
+	font-weight: bold;
+
+	background-color: black;
+
+	border: solid white 3px;
+	border-radius: 10px;
+
+	transition: 1s;
+}
+
+.botonconnexion:hover {
+
+	cursor: pointer;
+
+	background-color: white;
+	border: solid black 3px;
+	color: black;
+
+	transition: 1s;
+}
+
+.boutoninscire {
+	margin-top: 20px;
+	margin-right: 30px;
+
+	padding: 10px;
+
+	color: black;
+	font-family: consolas;
+	font-size: 20px;
+	font-weight: bold;
+
+	background-color: yellow;
+
+	border: solid black 3px;
+	border-radius: 10px;
+
+	transition: 1s;
+}
+
+.boutoninscire:hover {
+
+	cursor: pointer;
+
+	background-color: black;
+	border: solid yellow 3px;
+	color: white;
+
+	transition: 1s;
+}
+
+.nav img[id="barres"]{
+	margin-top: 15px;
+	margin-left: 5px;
+	margin-right: 250px;
+	filter : invert(100%);
+	width: 55px;
+	cursor : pointer;
+}
+
+/*
+------------------------
+		MENU
+------------------------
+
+*/
+
+.menu {
+	z-index: 1;
+	margin-top: 98px;
+	height: 100%;
+	width: 300px;
+	position: fixed;
+	background-color: black;
+	left : -300px;
+	transition: 0.5s;
+}
+
+.menu h2{
+	color: white;
+	padding: 20px;
+	font-family: sans-serif;
+	border-bottom: solid black 1px;
+	transition: 1s;
+}
+
+
+.menu h2:hover{
+	color: white;
+	padding: 20px;
+	font-family: sans-serif;
+	border-bottom: solid white 2px;
+	transition: 1s;
+}
+
+
+/*
+---------------------------
+		IMAGE D'ACCEUIL
+---------------------------
+
+*/
+
+.acceuil img[alt="imgacc"]{
+	width: 100%;
+	height: 1000px;
+	object-fit: cover;
+	object-position: 100% 0%;
+	z-index: 0;
+
+	border-bottom: solid white;
+
+}
+
+.titreacc{
+	position: absolute;
+	top : 25%;
+	color : white;
+	margin-left: 10px;
+
+	text-align: center;
+}
+
+.titreacc h1{
+	font-size : 90px;
+	text-shadow: 3px 3px 4px black;
+	font-family: sans-serif;
+}
+
+.titreacc p{
+	font-size: 35px;
+	font-family: consolas;
+	text-shadow: 3px 3px 4px black;
+}
+
+.infoacc {
+	position: absolute;
+	top : 65%;
+	right: 0%;
+	color : white;
+	margin-right: 15px;
+
+	text-align: center;
+
+}
+
+.infoacc p {
+	font-size: 37px;
+	font-family: sans-serif;
+	text-shadow: 3px 3px 4px black;
+
+	font-family: NewRamen;
+}
+
+.infoacc a {
+	color : white;
+	text-decoration: underline;
+	font-family: sans-serif;
+	font-size: 30px;
+
+	text-shadow: 1px 1px 4px black, 0 0 1em yellow, 0 0 0.2em yellow;
+}
+
+
+/*
+---------------------------
+		TABLEAU ACCEUIL
+---------------------------
+*/
+
+.tableauacc h1{
+	font-family: anl;
+	font-size: 80px;
+	letter-spacing: 10px;
+}
+
+.tableauacc {
+
+	color : white;
+	width: 70%;
+	margin-left: 15%;
+
+	text-align: center;
+}
+
+.tableauacc p {
+
+	font-family: sans-serif;
+	font-size: 19px;
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.tableauacc a {
+	color : white;
+	text-decoration: underline;
+	font-weight: bold;
+}
+
+.tableauacc img[alt="logoulis"] {
+	width: 50px;
+	filter : invert(100%);
+	margin-left: 10px;
+}
+
+
+/*
+---------------------------
+		QUI SOMME NOUS
+---------------------------
+
+*/
+
+
+.qui {
+	color : white;
+	width: 70%;
+	margin-left: 15%;
+
+	position: absolute;
+}
+
+.qui h1{
+	text-align: center;
+	letter-spacing: 5px;
+	font-family: SpicySushi;
+	font-size: 60px;
+	margin-top: 55px;
+	margin-bottom: 20px;
+
+}
+
+.quitxt {
+
+	font-family: sans-serif;
+	font-size: 20px;
+}
+
+.quitxt p {
+
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
+
+.quitxt li {
+
+	margin-bottom: 15px;
+	margin-top: 15px;
+}
